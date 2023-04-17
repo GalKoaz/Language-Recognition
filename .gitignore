@@ -1,5 +1,7 @@
 *.pyc
 .DS_store
 best_check_point*
-.mp3
-.wav
+*.mp3
+*.wav
+*.zip
+.idea*
