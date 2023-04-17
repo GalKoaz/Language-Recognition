@@ -9,7 +9,7 @@ Paper: [2018 odyssey X vector lid](https://danielpovey.com/files/2018_odyssey_xv
 
 Tutorial : [X-vectors: Robust DNN embeddings for speaker recognition](https://www.youtube.com/watch?v=8nZjiXEdMH0)
 
-Source repo : [X vector](https://github.com/KrishnaDN/x-vector-pytorch)
+Source repo : [X vector repository](https://github.com/KrishnaDN/x-vector-pytorch)
 
 ### Create manifest files for training and testing
 This step creates training and testing files.
@@ -18,7 +18,7 @@ python datasets.py --processed_data  /media/newhd/youtube_lid_data/download_data
 ```
 
 
-### Create and prepare the date for working
+### Create and prepare the data
 * Download data from commonVoice
 * Convert with the Convertor.py script the .mp3 files to .wav by the following command:
 ```Python
