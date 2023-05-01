@@ -24,16 +24,16 @@ torch.multiprocessing.set_sharing_strategy('file_system')
 
 ########## Argument parser
 parser = argparse.ArgumentParser(add_help=False)
-parser.add_argument('-training_filepath', type=str, default='meta/training_feat.txt')
-parser.add_argument('-testing_filepath', type=str, default='meta/testing_feat.txt')
-parser.add_argument('-validation_filepath', type=str, default='meta/validation_feat.txt')
+parser.add_argument('-training_filepath', type=str, default='meta/training.txt')
+parser.add_argument('-testing_filepath', type=str, default='meta/testing.txt')
+parser.add_argument('-validation_filepath', type=str, default='meta/validation.txt')
 
 parser.add_argument('-input_dim', action="store_true", default=257)
-parser.add_argument('-num_classes', action="store_true", default=8)
-parser.add_argument('-lamda_val', action="store_true", default=0.1)
-parser.add_argument('-batch_size', action="store_true", default=256)
+parser.add_argument('-num_classes', action="store_true", default=9)
+parser.add_argument('-lamda_val', action="store_true", default=0.5)
+parser.add_argument('-batch_size', action="store_true", default=10)
 parser.add_argument('-use_gpu', action="store_true", default=True)
-parser.add_argument('-num_epochs', action="store_true", default=100)
+parser.add_argument('-num_epochs', action="store_true", default=30)
 args = parser.parse_args()
 
 ### Data related
@@ -61,7 +61,7 @@ def train(dataloader_train, epoch):
     model.train()
 
     for i_batch, sample_batched in enumerate(dataloader_train):
-        print("batch: " + str(i_batch))
+        print("batch: " + str(i_batch+1))
         features = torch.from_numpy(np.asarray([torch_tensor.numpy().T for torch_tensor in sample_batched[0]])).float()
         labels = torch.from_numpy(np.asarray([torch_tensor[0].numpy() for torch_tensor in sample_batched[1]]))
         labels = labels.long()
@@ -124,6 +124,6 @@ def validation(dataloader_val, epoch):
 
 if __name__ == '__main__':
     for epoch in range(args.num_epochs):
-        print(epoch)
+        print(epoch+1)
         train(dataloader_train, epoch)
         validation(dataloader_val, epoch)
