@@ -1,6 +1,12 @@
 # Language Recognition
 
-Abstract
+In this project, we took an existing language recognition model and tried to improve it with several methods. This model applies x-vectors to the task of spoken language recognition. This framework consists of a deep neural network that maps sequences of speech features to fixed-dimensional embeddings, called x-vectors. Long-term language characteristics are captured in the network by a temporal pooling layer that aggregates information across time. Once extracted, x-vectors utilize the same classification technology developed for i-vectors.
+our work utilized datasets sourced from Common Voice, a valuable resource for multilingual speech data. We specifically focused on ten languages, carefully selected from three distinct language families: Indo-European, Semitic, and East Asian.
+
+The main method we used to improve the existing model is changing the architecture of the TDNN layers. The first significant change is the addition of 1X1 TDNN intermediate layers between the existing layers. Another change is in the structure of the TDNN network to a funnel structure which has extensive theoretical significance by changing the number of neurons in these layers. In addition, a grid search was performed to find the optimal dilation and context size values in the TDNN layers. 
+
+These optimal values help to find the complex patterns that represent the different languages in the audio segments. Finally, after significant training on the original data, additional training was performed for the purpose of fine-tuning the model on data with augmentations such as: changing the audio speed, adding Gaussian noise, and changing the pitch. This additional training improves the generalization ability of the model and its resistance to changes.
+The purpose of the research is to present approaches to improve language recognition models and in particular, models based on the TDNN and x-vector methods. The study presents a significant improvement in relation to the existing model with the help of each of these methods and finally presents an integrated model, which contains all these changes together.
 
 ## Table of Contents
 
