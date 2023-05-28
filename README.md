@@ -7,7 +7,7 @@ Abstract
 - [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Architecture](#architecture)
 - [Contributing](#contributing)
 
 ## Project Description
@@ -22,7 +22,9 @@ Source repo : [X vector repository](https://github.com/KrishnaDN/x-vector-pytorc
 
 ## Features
 
-[List the key features and functionalities of your project. Provide a clear and concise overview of what your project can do.]
+* Language recognition using X-vectors: The project implements the X-vector methodology described in the paper for identifying spoken languages.
+* Deep neural network (DNN) embeddings: X-vectors are DNN-based embeddings that capture speaker and language characteristics.
+* PyTorch implementation: The project utilizes PyTorch, a popular deep learning framework, for efficient implementation and training of the X-vector model.
 
 ## Installation
 
@@ -31,10 +33,14 @@ Clone the ripo:
 https://github.com/GalKoaz/Language-Recognition.git
 ```
 
-## Usage
+## Architecture
+<p align="center">
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/GHByLJL/Untitled-Diagram-drawio-3.png" alt="Untitled-Diagram-drawio-3" border="0" /></a>
+</p>
+
 
 
 ## Contributing
 
-[Explain how others can contribute to your project. Include guidelines for submitting bug reports, feature requests, or pull requests. Specify any coding standards or conventions you follow.]
+Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
