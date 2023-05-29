@@ -39,15 +39,16 @@ Clone the ripo:
 https://github.com/GalKoaz/Language-Recognition.git
 ```
 
+Our Final Model for download:
+
+https://easyupload.io/y85342
+
+
 ## Architecture
 <p align="center">
   <a href="https://imgbb.com/"><img src="https://i.ibb.co/GHByLJL/Untitled-Diagram-drawio-3.png" alt="Untitled-Diagram-drawio-3" border="0" /></a>
 </p>
 
-
-Our Final Model for download:
-
-https://easyupload.io/y85342
 
 
 
