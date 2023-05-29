@@ -45,6 +45,11 @@ https://github.com/GalKoaz/Language-Recognition.git
 </p>
 
 
+Our Final Model for download:
+
+https://easyupload.io/y85342
+
+
 
 ## Contributing
 
